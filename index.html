@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Nova - TJKT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(145deg, #f0f4f8, #d9e2ec);
+            padding: 2rem 1rem;
+            color: #1e293b;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 2rem;
+            box-shadow: 0 20px 35px -12px rgba(0,0,0,0.15);
+            overflow: hidden;
+        }
+        .hero {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            padding: 2rem;
+            text-align: center;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .hero p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 1.8rem;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+            border: 1px solid #e2e8f0;
+        }
+        .card h2 {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            border-left: 4px solid #3b82f6;
+            padding-left: 0.8rem;
+            color: #0f172a;
+        }
+        .info-list p {
+            margin-bottom: 0.6rem;
+            font-size: 1rem;
+        }
+        .info-list strong {
+            display: inline-block;
+            width: 100px;
+        }
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-top: 0.5rem;
+        }
+        .tags span {
+            background: #f1f5f9;
+            padding: 0.4rem 1rem;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            border: 1px solid #e2e8f0;
+        }
+        .btn-contact {
+            display: inline-block;
+            background: #0f172a;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: background 0.2s;
+        }
+        .btn-contact:hover {
+            background: #2d3a5e;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .footer {
+            background: #f8fafc;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.75rem;
+            border-top: 1px solid #e2e8f0;
+            color: #5b6e8c;
+        }
+        hr {
+            margin: 1rem 0;
+            border: 0;
+            height: 1px;
+            background: #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="hero">
+        <h1>Nova Dwi Aulia</h1>
+        <p>Siswa TJKT | SMK KOMPUTAMA Majenang</p>
+    </div>
+
+    <div class="content">
+        <!-- Biodata -->
+        <div class="card">
+            <h2>📋 Biodata</h2>
+            <div class="info-list">
+                <p><strong>Nama Lengkap</strong> : Nova Dwi Aulia</p>
+                <p><strong>Tgl Lahir</strong> : 06 November 2009</p>
+                <p><strong>Domisili</strong> : Cilacap, Jawa Tengah</p>
+                <p><strong>Email</strong> : novadwiaulia18@gmail.com</p>
+                <p><strong>Telepon</strong> : +62 858 6618 5414</p>
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn-contact" id="contactBtn">📧 Hubungi Saya</a>
+            </div>
+        </div>
+
+        <!-- Pendidikan -->
+        <div class="card">
+            <h2>🎓 Pendidikan</h2>
+            <div class="tags">
+                <span>MI MA'ARIF NU Cimanggu</span>
+                <span>MTS MA'ARIF NU Cimanggu</span>
+                <span>SMK KOMPUTAMA Majenang</span>
+            </div>
+        </div>
+
+        <!-- Musik Favorit -->
+        <div class="card">
+            <h2>🎵 Musik Favorit</h2>
+            <div class="tags">
+                <span>Pop</span>
+                <span>Tulus</span>
+                <span>Pamungkas</span>
+                <span>Virgoun</span>
+                <span>Sheila On 7</span>
+                <span>Nadif Basalammah</span>
+                <span>Hindia</span>
+            </div>
+        </div>
+
+        <!-- Tentang Saya -->
+        <div class="card">
+            <h2>📖 Tentang Saya</h2>
+            <p>Halo! Saya Nova, seorang pelajar di SMK KOMPUTAMA Majenang.</p>
+            <p>Saya siswa kelas X dengan jurusan <strong>Teknik Jaringan Komputer dan Telekomunikasi (TJKT)</strong>. Saya suka belajar jaringan, konfigurasi server, dan hal-hal baru di dunia teknologi. ✨</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 Nova Dwi Aulia — Portofolio Sederhana
+    </div>
+</div>
+
+<script>
+    const btn = document.getElementById('contactBtn');
+    if (btn) {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            alert("📧 Email: novadwiaulia18@gmail.com\n📞 WhatsApp: +62 858 6618 5414");
+        });
+    }
+</script>
+</body>
+</html>
